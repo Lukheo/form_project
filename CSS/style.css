@@ -157,6 +157,7 @@ main {
 
     &>div {
         width: 80vw;
+        max-width: 1024px;
         height: fit-content;
         border-radius: var(--radius);
         background: var(--background);
