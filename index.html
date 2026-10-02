@@ -41,6 +41,7 @@
         <div id="1-infos-perso">
             <h2>Informations personnelles</h2>
             <div class="questions">
+
                 <h3 class="required" id="1">Civilité de la personne concernée : </h3>
                 <div class="reponses choix">
                     <label>
@@ -52,61 +53,214 @@
                         Monsieur
                     </label>
                 </div>
+
                 <h3 class="required" id="2">Identité de la personne concernée : </h3>
                 <div class="reponses champs">
                     <label for="nom">Nom</label>
-                    <input type="text" name="nom" id="nom" placeholder="Saisir votre nom" aria-placeholder="Saisir votre nom">
+                    <input type="text" name="nom" id="nom" placeholder="Saisir votre nom"
+                        aria-placeholder="Saisir votre nom">
                     <label for="prenom">Prénom</label>
-                    <input type="text" name="prenom" id="prenom" placeholder="Saisir votre prenom" aria-placeholder="Saisir votre prenom">
+                    <input type="text" name="prenom" id="prenom" placeholder="Saisir votre prenom"
+                        aria-placeholder="Saisir votre prenom">
                 </div>
-                <h3 class="required" id="3">La personne a-t-elle un numéro <b>RPPS</b> ou <b>RPPS+</b>  ? </h3>
+
+                <h3 class="required" id="3">La personne a-t-elle un numéro <b>RPPS</b> ou <b>RPPS+</b> ? </h3>
                 <div class="reponses choix">
                     <label>
-                        <input type="radio" name="rpps" value="oui">
+                        <input type="radio" name="has-rpps" value="oui">
                         Oui
                     </label>
                     <label>
-                        <input type="radio" name="rpps" value="non">
+                        <input type="radio" name="has-rpps" value="non">
                         Non
                     </label>
+                </div>
+
+                <h3 class="required" id="4">Le numéro est composée de 11 chiffres : </h3>
+                <div class="reponses champs">
+                    <input type="text" name="rpps" id="rpps" placeholder="Saisir votre numéro rpps ou rpps+"
+                        aria-placeholder="Saisir votre numéro rpps ou rpps+">
+                </div>
+
+                <h3 class="required" id="5">Identité du N+1 : </h3>
+                <div class="reponses champs">
+                    <label for="nom-n1">Nom</label>
+                    <input type="text" name="nom-n1" id="nom-n1" placeholder="Saisir le nom de votre N+1"
+                        aria-placeholder="Saisir le nom de votre N+1">
+                    <label for="prenom-n1">Prénom</label>
+                    <input type="text" name="prenom-n1" id="prenom-n1" placeholder="Saisir le prenom de votre N+1"
+                        aria-placeholder="Saisir le prenom de votre N+1">
+                    <label for="mail-n1">Adresse mail</label>
+                    <input type="text" name="mail-n1" id="mail-n1" placeholder="Saisir l'adresse mail de votre N+1"
+                        aria-placeholder="Saisir l'adresse mail de votre N+1">
+                </div>
+            </div>
+
+            <div class="bottom-panel">
+                <button>Suivant</button>
+                <div>
+                    <p>Partie 1 sur 13</p>
+                    <div class="progress-bar" style="--progress: 1 / 13;">
+                        <div class="progress"></div>
+                    </div>
                 </div>
             </div>
         </div>
         <div id="2-obj-demande">
             <h2>Objet de la demande</h2>
+
+            <div class="bottom-panel">
+                <button>Suivant</button>
+                <div>
+                    <p>Partie 2 sur 13</p>
+                    <div class="progress-bar" style="--progress: 2 / 13;">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="3-infos-contrat">
             <h2>Informations du contrat</h2>
+
+            <div class="bottom-panel">
+                <button>Suivant</button>
+                <div>
+                    <p>Partie 3 sur 13</p>
+                    <div class="progress-bar" style="--progress: 3 / 13;">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="4-infos-modif-contrat">
             <h2>Informations sur les modifications du contrat</h2>
+
+            <div class="bottom-panel">
+                <button>Suivant</button>
+                <div>
+                    <p>Partie 4 sur 13</p>
+                    <div class="progress-bar" style="--progress: 4 / 13;">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="5-fin-cdi">
             <h2>Fin de CDI</h2>
+
+            <div class="bottom-panel">
+                <button>Suivant</button>
+                <div>
+                    <p>Partie 5 sur 13</p>
+                    <div class="progress-bar" style="--progress: 5 / 13;">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="6-infos-nv-poste">
             <h2>Informations sur le nouveau poste</h2>
+
+            <div class="bottom-panel">
+                <button>Suivant</button>
+                <div>
+                    <p>Partie 6 sur 13</p>
+                    <div class="progress-bar" style="--progress: 6 / 13;">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="7-infos-nv-etablissement">
             <h2>Informations sur le nouvel établissement</h2>
+
+            <div class="bottom-panel">
+                <button>Suivant</button>
+                <div>
+                    <p>Partie 7 sur 13</p>
+                    <div class="progress-bar" style="--progress: 7 / 13;">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="8-infos-lieu">
             <h2>Lieu(x)</h2>
+
+            <div class="bottom-panel">
+                <button>Suivant</button>
+                <div>
+                    <p>Partie 8 sur 13</p>
+                    <div class="progress-bar" style="--progress: 8 / 13;">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="9-materiel-informatique">
             <h2>Matériel informatique</h2>
+
+            <div class="bottom-panel">
+                <button>Suivant</button>
+                <div>
+                    <p>Partie 9 sur 13</p>
+                    <div class="progress-bar" style="--progress: 9 / 13;">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="10-infos-logiciel">
             <h2>Logiciels</h2>
+
+            <div class="bottom-panel">
+                <button>Suivant</button>
+                <div>
+                    <p>Partie 10 sur 13</p>
+                    <div class="progress-bar" style="--progress: 10 / 13;">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="11-infos-tel">
             <h2>Téléphonie mobile</h2>
+
+            <div class="bottom-panel">
+                <button>Suivant</button>
+                <div>
+                    <p>Partie 11 sur 13</p>
+                    <div class="progress-bar" style="--progress: 11 / 13;">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="12-infos-continuite">
             <h2>Continuité d'activité</h2>
+
+            <div class="bottom-panel">
+                <button>Suivant</button>
+                <div>
+                    <p>Partie 12 sur 13</p>
+                    <div class="progress-bar" style="--progress: 12 / 13;">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="13-infos-civilite">
             <h2>Changements de civilité / Nom / Prénom</h2>
+
+            <div class="bottom-panel">
+                <button>Suivant</button>
+                <div>
+                    <p>Partie 13 sur 13</p>
+                    <div class="progress-bar" style="--progress: 13 / 13;">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>

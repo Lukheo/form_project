@@ -226,6 +226,48 @@ main {
     font-weight: bold;
 }
 
+.bottom-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: var(--padding);
+    padding: var(--padding);
+    background: var(--info-light);
+    align-items: center;
+
+    & button {
+        padding: var(--input-padding);
+        border-radius: var(--padding);
+        border: none;
+        background: var(--primary);
+        color: var(--info-light);
+        transition: 200ms ease;
+        cursor: pointer;
+        font-size: 16px;
+
+        &:hover {
+            background: var(--primary-hover);
+        }
+    }
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background: var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.progress {
+    width: calc( var(--progress) * 100%);
+    height: 100%;
+    background: var(--primary);
+    border-radius: inherit;
+    transition: width 0.3s ease;
+}
+
 
 
 /* testing */
