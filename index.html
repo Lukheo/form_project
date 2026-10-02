@@ -1,11 +1,114 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
-    
+    <header>
+        <img src="IMAGES/logo-adapei72-2x.webp" alt="logo de l'adapei de la sarthe">
+        <h1>Formulaire déclaratif de demande d'accès</h1>
+    </header>
+    <main>
+        <div id="intro">
+            <h2>Introduction</h2>
+            <p>
+                Ce questionnaire vise à faciliter la demande d'une création de compte professionnel, ainsi que sa
+                gestion en cas de changement. Il nécessite entre 5 et 10 minutes en fonction des profils.
+            </p>
+            <p>
+                Important : Afin de garder une trace de votre réponse, vous pouvez appuyer sur le bouton
+                <b>“Enregistrer ma réponse”</b> juste après son envoi.
+            </p>
+            <p>
+                Les questions dotées d’un <b>astérisque rouge (*)</b> sont des questions <b>obligatoires</b>. Vous devez
+                impérativement répondre à ces questions, sinon vous ne pourrez pas poursuivre.
+            </p>
+            <p>
+                Les questions qui n’ont <b>pas d’astérisque rouge</b> sont des questions <b>optionnelles</b> non
+                bloquantes.
+            </p>
+        </div>
+        <div id="1-infos-perso">
+            <h2>Informations personnelles</h2>
+            <div class="questions">
+                <h3 class="required" id="1">Civilité de la personne concernée : </h3>
+                <div class="reponses choix">
+                    <label>
+                        <input type="radio" name="civilite" value="madame">
+                        Madame
+                    </label>
+                    <label>
+                        <input type="radio" name="civilite" value="monsieur">
+                        Monsieur
+                    </label>
+                </div>
+                <h3 class="required" id="2">Identité de la personne concernée : </h3>
+                <div class="reponses champs">
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom" id="nom" placeholder="Saisir votre nom" aria-placeholder="Saisir votre nom">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Saisir votre prenom" aria-placeholder="Saisir votre prenom">
+                </div>
+                <h3 class="required" id="3">La personne a-t-elle un numéro <b>RPPS</b> ou <b>RPPS+</b>  ? </h3>
+                <div class="reponses choix">
+                    <label>
+                        <input type="radio" name="rpps" value="oui">
+                        Oui
+                    </label>
+                    <label>
+                        <input type="radio" name="rpps" value="non">
+                        Non
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div id="2-obj-demande">
+            <h2>Objet de la demande</h2>
+        </div>
+        <div id="3-infos-contrat">
+            <h2>Informations du contrat</h2>
+        </div>
+        <div id="4-infos-modif-contrat">
+            <h2>Informations sur les modifications du contrat</h2>
+        </div>
+        <div id="5-fin-cdi">
+            <h2>Fin de CDI</h2>
+        </div>
+        <div id="6-infos-nv-poste">
+            <h2>Informations sur le nouveau poste</h2>
+        </div>
+        <div id="7-infos-nv-etablissement">
+            <h2>Informations sur le nouvel établissement</h2>
+        </div>
+        <div id="8-infos-lieu">
+            <h2>Lieu(x)</h2>
+        </div>
+        <div id="9-materiel-informatique">
+            <h2>Matériel informatique</h2>
+        </div>
+        <div id="10-infos-logiciel">
+            <h2>Logiciels</h2>
+        </div>
+        <div id="11-infos-tel">
+            <h2>Téléphonie mobile</h2>
+        </div>
+        <div id="12-infos-continuite">
+            <h2>Continuité d'activité</h2>
+        </div>
+        <div id="13-infos-civilite">
+            <h2>Changements de civilité / Nom / Prénom</h2>
+        </div>
+    </main>
 </body>
+
 </html>

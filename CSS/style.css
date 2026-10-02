@@ -1,0 +1,236 @@
+:root {
+    /* Couleur principale */
+    --primary: #5B5FC7;
+    --primary-hover: #4F52B8;
+    --primary-light: #E8E8F8;
+
+    /* Arrière-plans */
+    --background: #F5F5F5;
+    --surface: #FFFFFF;
+    --surface-hover: #FAFAFA;
+
+    /* Texte */
+    --text-primary: #242424;
+    --text-secondary: #616161;
+    --text-muted: #8A8A8A;
+
+    /* Bordures */
+    --border: #E1E1E1;
+    --border-hover: #C7C7C7;
+    --border-focus: #5B5FC7;
+
+    /* États */
+    --success: #107C10;
+    --success-light: #DFF6DD;
+
+    --warning: #F7630C;
+    --warning-light: #FFF4CE;
+
+    --error: #D13438;
+    --error-light: #FDE7E9;
+
+    --info: #0078D4;
+    --info-light: #DEECF9;
+
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+    --background-gradient:
+        radial-gradient(ellipse 70% 45% at 10% 0%,
+            var(--primary-light) 0%,
+            transparent 70%),
+        radial-gradient(ellipse 60% 40% at 90% 5%,
+            #e2e3f7 0%,
+            transparent 70%),
+        var(--background);
+
+
+    --radius: 20px;
+    --padding: 20px;
+    --padding-reduced: 5px;
+    --input-padding: 6px 12px;
+
+    --font: "Poppins", sans-serif;
+    --titles: 600;
+    --text: 400;
+}
+
+* {
+    font-family: var(--font);
+    font-weight: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background-gradient)
+}
+
+/* Vague principale */
+body::before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+
+    left: -10%;
+    bottom: -180px;
+
+    width: 120%;
+    height: 350px;
+
+    background: var(--primary-light);
+
+    border-radius: 50% 50% 0 0 / 35% 35% 0 0;
+
+    transform: rotate(-2deg);
+}
+
+/* Vague secondaire */
+body::after {
+    content: "";
+    position: fixed;
+    z-index: -1;
+
+    left: -10%;
+    bottom: -210px;
+
+    width: 120%;
+    height: 320px;
+
+    background: var(--primary);
+
+    border-radius: 50% 50% 0 0 / 40% 40% 0 0;
+
+    transform: rotate(2deg);
+
+    opacity: 0.18;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--titles);
+}
+
+h1 {
+    text-align: center;
+}
+
+b {
+    font-weight: 700;
+    letter-spacing: 0.025rem;
+}
+
+em {
+    font-style: italic;
+}
+
+header {
+    position: sticky;
+    display: flex;
+    height: 80px;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    border-bottom: 2px solid var(--primary);
+    align-items: center;
+    justify-content: center;
+    background: var(--background);
+    box-shadow: var(--shadow-lg);
+
+    &>img {
+        height: 80px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
+
+main {
+    margin: var(--padding);
+    min-height: 100vh;
+
+    &>div {
+        width: 80vw;
+        height: fit-content;
+        border-radius: var(--radius);
+        background: var(--background);
+        box-shadow: var(--shadow-lg);
+        overflow: hidden;
+        padding: var(--padding);
+        margin-bottom: 50px;
+
+        &>h2 {
+            color: var(--info);
+        }
+    }
+}
+
+#intro {
+    background: var(--info);
+    box-shadow: var(--shadow-lg);
+    color: var(--info-light);
+
+    &>h2 {
+        color: var(--info-light);
+    }
+
+    &>p {
+        margin: var(--padding);
+    }
+}
+
+.questions {
+    padding: var(--padding);
+}
+
+.reponses {
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+}
+
+.choix label {
+    margin-bottom: 10px;
+}
+
+.champs {
+    & label {
+        margin-bottom: var(--padding-reduced);
+    }
+
+    & input {
+        margin-bottom: 10px;
+        padding: var(--input-padding);
+        border-radius: var(--padding-reduced);
+        border: none;
+        border-bottom: 2px solid transparent;
+        transition: 200ms ease;
+
+        &:hover {
+            border-bottom-color: var(--primary);
+        }
+    }
+}
+
+
+.required::after {
+    content: " *";
+    color: red;
+    font-weight: bold;
+}
+
+
+
+/* testing */
+/* .scroll {
+    height: 4000px;
+    width: 200px;
+    border: 2px dashed black;
+    border-radius: 20px;
+} */
